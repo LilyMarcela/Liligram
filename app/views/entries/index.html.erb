@@ -1,0 +1,22 @@
+<h1>Instagram</h1>
+
+<div class="jumbotron">
+<div class="row xxx">
+<div clas="col">    
+<ul>
+
+    <%= button_to "new Post", "/entries/new", method: :get, class: "btn btn-success" %>
+  <% @entries.each do |entry| %>
+  <li>
+    <%= link_to entry.Author, "/entries/#{entry.id}" %> 
+    <img src="<%= entry.Photo_url %>">
+    <%= button_to "delete", entry, :method => :delete, class: "btn btn-danger" %>
+
+  </li>
+
+  <% end %>
+  
+</ul>
+</div>
+</div>
+<div>

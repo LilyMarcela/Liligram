@@ -1,0 +1,9 @@
+<h1>Instagram</h1>
+
+<div>
+<h2><%= @entry.Author %>!!!!!</h2>
+<a href="<%=edit_entry_path(@entry)%>">EDIT ME</a>
+<a href="/entries/<%=@entry.id%>/edit">EDIT ME</a>
+<img src="<%=@entry.Photo_url%>">
+
+</div>
